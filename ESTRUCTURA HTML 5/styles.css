@@ -1,0 +1,152 @@
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #1d1b1b;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/*Encabezado*/
+header {
+  background-color: #ffffff;
+  color: #1d1a1a;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.logo {
+  margin-left: auto;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+/*Secciones principales*/
+main {
+  margin: 20px 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #7a7878;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*FORMULARIO*/
+form {
+  background-color: #000;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background-color: #fff;
+}
+
+/*pie de página*/
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Sección de personajes */
+.armas, .personajes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.arma, .personaje {
+  flex: 1 1 calc(33.333% - 30px);
+  text-align: center;
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.arma img, .personaje img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.arma h4, .personaje h4 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+}
